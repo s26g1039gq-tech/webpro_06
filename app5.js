@@ -24,6 +24,7 @@ app.get("/keiyo_add", (req, res) => {
   let name = req.query.name;
   let newdata = { id: id, code: code, name: name };
   station.push( newdata );
+  res.redirect('public/keiyo_add.html');
 });
 
 app.get("/hello1", (req, res) => {
